@@ -1,0 +1,358 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    position:sticky;
+    top: 0;
+    z-index: 5;
+    border-bottom: 1px solid #a9a9a9;
+    background-color: #fff;
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+.sub-menu,.toggle{
+    display: none;  
+}
+.nav{
+    min-width: fit-content;
+}
+.nav ul,.quick-links ul{
+    display: inline-flex;
+    list-style: none;
+    height: 80px;
+}
+.quick-links ul li:nth-child(3) a{
+    border: none;
+}
+.nav ul li,.quick-links ul li{
+    padding: 20px 0;    /*TO INCREASE THE FIELD OF CONTACT WITH CURSOR*/
+    cursor: pointer;
+}
+
+.nav ul li a,.quick-links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    padding: 0px 20px;
+    border-right: 1px solid black;
+}
+.nav ul li:last-child a,.quick-links ul li:last-child a{
+    border: none;
+}
+
+.nav ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: #ebcd1e;;
+    top: 60px;
+}
+.sub-menu ul{
+    display:inline-block;
+}
+.sub-menu ul li{
+    padding: 10px;
+    width: 210PX;
+
+}
+.sub-menu ul li:hover{
+    background: #555;
+}   
+.sub-menu ul li a:hover{
+    color: #ebcd1e;;
+}
+.sub-menu ul li a{
+    padding: 10px;
+    border: none;
+}
+.quick-links ul li:hover a{
+    color: #ebcd1e;;
+}
+.line-through{
+    position: relative;
+}
+.line-through::after{
+    content: " ";
+    height: 3px;
+    position: absolute;
+    display: block;
+    width: 0;
+    top: 28px;
+    left: 15px;
+    background-color:#ebcd1e;
+    transition: all 0.2s ease-in-out;
+}
+.line-through:hover::after{
+    width: 70%;
+}
+
+
+
+/* page-1 : landing page ------------------------------------*/
+.page-1{
+    height: 90vh;
+    /* min-width: 100vw; */
+    background-color: red;
+    background-position: center;
+    animation: crosole 5s infinite;
+    flex-direction: column;
+}
+
+@keyframes crosole{
+    0%{
+        background-image: url(images/1.jpg);
+    }
+    33.33%{
+        background-image: url(images/2.jpg);
+    }
+    66.66%{
+        background-image: url(images/2.jpg);
+    }
+    100%{
+        background-image: url(images/1.jpg);
+    }
+}
+
+
+
+
+/* page-2  ------------------------------------*/
+
+.page-2,.page-4,.page-5,.page-6,.page-7,.page-8,.page-9{
+    padding: 100px 0 20px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.page-2 img{
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.text{
+    padding: 10px 20px;
+}
+
+
+/* page-3  ------------------------------------*/
+
+.page-3 p{
+    color: #AAAAAA;
+}
+.page-3 .card-1{
+    background-image: url(images/p-3-1.jpg);
+}
+.page-3 .card-2{
+    background-image: url(images/p-3-2.jpg);
+}
+.page-3 .card-3{
+    background-image: url(images/p-3-3.jpg);
+}
+.page-3 .text{
+    flex-direction: column;
+    text-align: center;
+}
+.page-3 .card{
+    max-width: 600px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #5e5d5d;
+    background-blend-mode: multiply;
+}
+.page-3 .btn{
+    margin: 30px 0 60px;
+
+}
+
+/* page-4  ------------------------------------*/
+
+
+.page-4 .card-1 img{
+    clip-path: polygon(40% 30%, 78% 100%, 0% 100%);
+    margin:0 0 0 60px;
+}
+.page-4 .card-2 img{
+    clip-path: polygon(20% 0, 90% 50%, 20% 100%);
+    margin: 20px 0 140px 85px;
+}
+.page-4 .card-3 img{
+    clip-path: polygon(75% 0%, 75% 90%, 0% 50%);
+    margin:30px 0 0 30px;
+}
+.page-4 .card-4 img{
+    clip-path: polygon(0% 0%, 80% 0%, 39% 81%);
+    margin: 43px 0 0 61px;
+}
+.page-4 .card img{
+    width: 70%;
+}
+.page-4 .card{
+    margin: 20px 0;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/hexagon-ring.webp);
+}
+.page-4 .row{
+    max-width: 1000px;
+}
+
+/* page-5  ------------------------------------*/
+
+.page-5{
+    padding-bottom: 0;
+}
+.page-5,.page-7{
+    background-color:#f5f5f5;
+}
+.page-5 img{
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+
+}
+.row{
+    margin:50px 0 0;
+}
+.project-details{
+    background-color: #000;
+    padding: 10px;
+    max-width: 400px;
+}
+.page-5 p{
+    color: #fff;
+    font-weight: 400;
+}
+.blank{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/blank-bg-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+.internal-full{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(235, 205, 30, 0.9);
+}
+/* page-6  ------------------------------------*/
+.page-6 h3{
+    font-weight: 500;
+}
+.page-6 {
+    padding-bottom: 10px;
+}
+.page-6 .card{
+    max-width: 600px;
+}
+.page-6 img{
+    border-radius: 5px;
+}
+/* page-7  ------------------------------------*/
+.page-7{
+    height: 500px;
+    padding: top 50px; ;
+}
+.page-7 .row{
+    width: 100%;
+}
+.p7-media{
+    display: none;
+}
+.page-7 .row img{
+    margin: 30px;
+    max-width:200px;
+    filter: grayscale(100%);
+    transition: all 0.5s linear;
+}
+.page-7 .row img:hover{
+    filter: grayscale(0);
+}
+/* page-8  ------------------------------------*/
+.page-8{
+    padding-bottom:100px;
+    background-image: url(images/p-8-bg.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.img-box{
+    width: 60px;
+    border: 3px solid #ebcd1e;
+}
+.testimonial{
+    padding: 10px;
+    gap: 10px;
+    /* max-width: 700px; */
+}
+.testimonial .italic{
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.fa-quote-left{
+    align-self: flex-start;
+    font-size: 30px;
+}
+.testi-box{
+    display: flex;
+    gap: 20px;
+    justify-self: left !important; 
+}
+.italic{
+    max-width: 600px;
+}
+.box-2{
+    display: none;
+}
+/* page-9  ------------------------------------*/
+
+.page-9,.page-10{
+    text-align: center;
+}
+.page-9 p{
+    margin: 0 20px;
+    max-width: 650px;
+}
+.email{
+    border: none;
+    background-color: #e6e6e6;
+    color: #555;
+    padding-left: 10px;
+    height: 40px;
+    max-width: 700px;
+    width: 90vw;
+}
+.page-9 .btn{
+    height: 40px;
+    width: 170px;
+    margin: 10px 0;
+}
+/* page-10  ------------------------------------*/
+.page-10 {
+    background-color: #333;
+    padding: 50px;
+    width: 100%;
+    text-align: center ;
+}
+.page-10 .logo{
+    min-width: 150px;
+}
+.page-10 .fa-brands{
+    background-color: #555;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+}
+.fLinks{
+    gap: 7px;
+}
+.page-10 .quick-links ul li:nth-child(3) a{
+    border-right:1px solid black;
+}
+
+.page-10 .quick-links ul{
+    min-width: 400px;
+}

@@ -1,0 +1,127 @@
+@media only screen and (max-width:750px) {
+    .page-10{
+        flex-direction: column;
+    }
+
+}
+
+
+
+    @media only screen and (min-width:1100px) {
+    .page-1 .h3{
+        font-size: 30px;
+        letter-spacing: 0.5rem;
+    }
+    .h1{
+        font-size: 70px;
+    }
+    .row{
+        margin-top: 10px;
+    }
+    .btn{
+        scale:1.1 ;
+        margin-right: 15px !important;
+    }
+    .h1-2{
+        font-size: 30px !important;
+        font-weight: 200;
+    }
+
+    /* page-2 --------------------------------*/
+    .page-2 img{
+        width: 300px;
+    }
+    .page-2 .card{
+        min-width: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+    .media{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1250px;
+        gap: 20px;
+    }
+    .page-2 .card-1 img,.page-2 .card-3 img{
+        order: 2;
+    }
+    .page-2 .card-1 .text,.page-2 .card-3 .text{
+        text-align: right;
+    }
+    /* page-3 --------------------------------*/
+    .page-3 .card{
+        flex: 1;
+        aspect-ratio: 1/1;
+        margin-top: 80px;
+    }
+    /* page-4 --------------------------------*/
+    /* page-5 --------------------------------*/
+    .page-5 .card{
+        flex: 350px;
+    }
+    .project-details
+    {
+        display: none;
+    }
+    .page-5 img{
+        /* display: none; */
+    }
+    .page-5 .card-1:hover .y-box-trans-1{
+        visibility: visible;
+    }
+
+    /* page-6 --------------------------------*/
+    .page-6 .line{
+        display: none;
+    }
+    .p6-media{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    
+    /* page-7 --------------------------------*/
+    .cube-container{
+        display: none;
+    }
+    .page-7 .p7-media{
+        display: block;
+    }
+    /* page-8   --------------------------------*/
+    .box-2{
+        display: block;
+    }
+    .italic{
+        width: 500px;
+    }
+    .page-10{
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1100px) {
+    .nav{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    .quick-links ul li:nth-child(3) a{
+        border-right:  1px solid black;
+    }
+}
+
+@media only screen and (max-width:1450px) {
+    .quick-links ul li:first-child{
+        display: none;
+    }
+}
+

@@ -1,0 +1,132 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.card{
+    max-width: 400px;
+     width: 100%;
+    flex-direction: column;
+}
+img{
+    width: 90%;
+    background-position: center;
+    background-size: contain;
+}
+.wraper{
+    flex-wrap: wrap;
+}
+.rwraper{
+    flex-wrap: wrap-reverse;
+}
+
+.h3{
+    font-weight: 400;
+}
+.h3-1{
+    letter-spacing: .3rem;
+}
+.h3-2{
+    padding: 60px 0 30px;
+}
+.h1{
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.h1-2{
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 100;
+    font-size: 22px;
+    letter-spacing: .1rem;
+}
+.h-row{
+    background-color: #555;
+    width: 350px;
+    height: 1px;
+    margin-bottom: 50px;
+}
+.fa-triangle-exclamation{
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    color: #ebcd1e;
+    transform: rotate(180deg);
+}
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn-1{
+    background-color: #ebcd1e;
+}
+.btn-2{
+    background-color: #fff;
+}
+.btn-3{
+    background-color: #333;
+}
+.btn:hover{
+    background-color: #333;
+    transition: all 0.5s ease;
+}
+h5{
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+}
+.y-s{
+    background-color: #ebcd1e;
+    padding: 2px ;
+}
+p{
+    padding: 10px 0;
+    line-height: 1.5rem;
+    color: #555;
+}
+
+.align-col{
+    text-align: center;
+    flex-direction: column;
+}
+.i-btn{
+    background-color: transparent;
+    border: none;
+    width: max-content;
+    padding: 5px 10px;
+    margin: 5px 20px;
+}
+.i-btn:active{
+    background-color: #ebcd1e;
+}
+.block{
+    display: block;
+}
+.white{
+    color: #fff !important;
+}
+.line{
+    margin: auto;
+    height: 2px;
+    width: 570px;
+    max-width: 80vw;
+    background-color: #aaa;
+    margin-bottom: 60px;
+
+}
+
+.y-box-trans-1{
+    background-color: #ebcd1e;
+    z-index: 2;
+    position: absolute;
+    height: 300px;
+    width: 380px;
+    visibility: hidden;
+    display: none;
+}
